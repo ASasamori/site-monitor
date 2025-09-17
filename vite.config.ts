@@ -4,11 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['fs', 'path', 'url']
-    }
-  },
   define: {
     'global': 'globalThis',
     'process.env.REACT_APP_GBOX_API_KEY': JSON.stringify(process.env.REACT_APP_GBOX_API_KEY),
