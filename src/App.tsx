@@ -8,7 +8,6 @@ import { useFormHandlers } from './hooks/useFormHandlers'
 import { useMonitoring } from './hooks/useMonitoring'
 import { loadFromStorage, clearAllData } from './utils/storage'
 import { createMonitoringSession } from './services/monitoringService'
-import { isValidUrl } from './utils/validation'
 
 function App() {
   // Form handling hook
